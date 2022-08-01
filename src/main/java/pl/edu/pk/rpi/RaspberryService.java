@@ -8,7 +8,7 @@ public class RaspberryService {
     public static int openCommunication(){
 
 
-        int serialPort = Serial.serialOpen("/dev/ttyS0", 9600);
+        int serialPort = Serial.serialOpen("/dev/ttyAMA0", 9600);
         if (serialPort == -1) {
             System.out.println("Serial Port Failed");
             return 0;
